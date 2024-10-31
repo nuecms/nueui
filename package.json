@@ -33,5 +33,9 @@
     "husky": "^9.0.11",
     "lint-staged": "^13.0.3",
     "vitepress": "^1.4.2"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.12",
+    "element-plus": "^2.8.6"
   }
 }
