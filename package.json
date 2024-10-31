@@ -32,10 +32,12 @@
     "eslint-define-config": "^2.1.0",
     "husky": "^9.0.11",
     "lint-staged": "^13.0.3",
-    "vitepress": "^1.4.2"
+    "unplugin-auto-import": "^0.18.3",
+    "vitepress": "^1.4.2",
+    "vitepress-theme-demoblock": "^3.0.7"
   },
   "peerDependencies": {
-    "vue": "^3.5.12",
-    "element-plus": "^2.8.6"
+    "element-plus": "^2.8.6",
+    "vue": "^3.5.12"
   }
 }
