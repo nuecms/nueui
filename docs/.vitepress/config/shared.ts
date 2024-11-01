@@ -55,13 +55,12 @@ export const shared = defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/nuecms/nueui' }
     ],
-
     search: {
       provider: 'algolia',
       options: {
-        appId: '8J64VVRP8K',
-        apiKey: '52f578a92b88ad6abde815aae2b0ad7c',
-        indexName: 'vitepress',
+        appId: 'N5BJZE25C1',
+        apiKey: '87da9a1ba26a2ca02c457887a53b115d',
+        indexName: 'nueui',
         locales: {
           ...zhSearch,
           ...ptSearch,
@@ -72,6 +71,6 @@ export const shared = defineConfig({
       }
     },
 
-    carbonAds: { code: 'CEBDT27Y', placement: 'vuejsorg' }
+    // carbonAds: { code: 'CEBDT27Y', placement: 'vuejsorg' }
   }
 })
