@@ -6,7 +6,7 @@
   },
   "files": [
     {
-      "location": ".vitepress/config/{en,zh,pt,jp,es,ko}.ts",
+      "location": ".vitepress/config/{en,zh,pt,ja,es,ko}.ts",
       "pattern": ".vitepress/config/@lang.ts",
       "type": "universal"
     },
@@ -31,7 +31,7 @@
     },
     {
       "label": "日本語",
-      "lang": "jp"
+      "lang": "ja"
     },
     {
       "label": "Español",
