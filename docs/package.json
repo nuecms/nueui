@@ -1,0 +1,25 @@
+{
+  "name": "docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "lunaria:build": "lunaria build",
+    "lunaria:open": "open-cli .vitepress/dist/_translations/index.html"
+  },
+  "devDependencies": {
+    "@lunariajs/core": "^0.1.1",
+    "markdown-it-mathjax3": "^4.3.2",
+    "nueui": "workspace:*",
+    "open-cli": "^8.0.0",
+    "unplugin-auto-import": "^0.18.3",
+    "vitepress": "^1.4.2",
+    "vitepress-theme-demoblock": "^3.0.7"
+  },
+  "peerDependencies": {
+    "element-plus": "^2.8.6",
+    "vue": "^3.5.12"
+  }
+}

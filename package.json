@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "nueui",
   "packageManager": "pnpm@9.5.0",
+  "workspaces": [
+    "docs"
+  ],
   "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
+    "docs:dev": "pnpm run -C docs dev",
+    "docs:build": "pnpm run -C docs build",
+    "docs:preview": "pnpm run -C docs preview",
+    "docs:lunaria:build": "pnpm run -C docs lunaria:build",
+    "docs:lunaria:open": "pnpm run -C docs lunaria:open",
     "prepare": "husky"
   },
   "lint-staged": {
