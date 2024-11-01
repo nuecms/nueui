@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import { search as zhSearch } from './zh'
 import { search as ptSearch } from './pt'
-import { search as ruSearch } from './ru'
+import { search as jaSearch } from './ja'
 import { search as esSearch } from './es'
 import { search as koSearch } from './ko'
 
@@ -65,7 +65,7 @@ export const shared = defineConfig({
         locales: {
           ...zhSearch,
           ...ptSearch,
-          ...ruSearch,
+          ...jaSearch,
           ...esSearch,
           ...koSearch
         }
