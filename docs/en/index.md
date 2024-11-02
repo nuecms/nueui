@@ -19,7 +19,7 @@ hero:
       text: GitHub
       link: https://github.com/nuecms/nueui
   image:
-    src: /vitepress-logo-large.webp
+    src: /nueui-logo-large.webp
     alt: VitePress
 
 features:
