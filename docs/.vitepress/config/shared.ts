@@ -4,10 +4,11 @@ import { search as ptSearch } from './pt'
 import { search as jaSearch } from './ja'
 import { search as esSearch } from './es'
 import { search as koSearch } from './ko'
+import { mdPlugin } from './plugins'
+import { getViteConfig } from './vite'
 
-export const shared = defineConfig({
+export const shared = (env) => ({
   title: 'NueUI',
-
   rewrites: {
     'en/:rest*': ':rest*'
   },
@@ -17,7 +18,7 @@ export const shared = defineConfig({
   metaChunk: true,
 
   markdown: {
-    math: true,
+    // math: true,
     codeTransformers: [
       // We use `[!!code` in demo to prevent transformation, here we revert it back.
       {
@@ -25,9 +26,11 @@ export const shared = defineConfig({
           return code.replace(/\[\!\!code/g, '[!code')
         }
       }
-    ]
+    ],
+    config: (md) => mdPlugin(md),
   },
 
+  vite: getViteConfig(env),
   sitemap: {
     hostname: 'https://ui.nuecms.com',
     transformItems(items) {

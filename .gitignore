@@ -20,3 +20,4 @@ cypress/screenshots/*
 cypress/videos/*
 tmp
 docs/.vitepress/cache
+ai-md-translator

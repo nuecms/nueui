@@ -48,22 +48,20 @@ hello: world
 ---
 
 <script setup>
-import { ref } from 'vue'
+  import { ref } from 'vue'
 
-const count = ref(0)
+  const count = ref(0)
 </script>
 
-## Markdown Content
-
-The count is: {{ count }}
+## Markdown Content The count is: {{ count }}
 
 <button :class="$style.button" @click="count++">Increment</button>
 
 <style module>
-.button {
-  color: red;
-  font-weight: bold;
-}
+  .button {
+    color: red;
+    font-weight: bold;
+  }
 </style>
 ```
 
@@ -77,9 +75,9 @@ You also have access to VitePress' runtime APIs such as the [`useData` helper](.
 
 ```html
 <script setup>
-import { useData } from 'vitepress'
+  import { useData } from 'vitepress'
 
-const { page } = useData()
+  const { page } = useData()
 </script>
 
 <pre>{{ page }}</pre>
@@ -142,7 +140,6 @@ The HTML wrapped by `<code>` will be displayed as-is; only the HTML that is **no
 ::: tip
 The output HTML is accomplished by [Markdown-it](https://github.com/Markdown-it/Markdown-it), while the parsed headers are handled by VitePress (and used for both the sidebar and document title).
 :::
-
 
 ## Escaping
 
@@ -255,37 +252,33 @@ import ComponentInHeader from '../../components/ComponentInHeader.vue'
 }
 </style>
 
-
 ## VS Code IntelliSense Support
 
 <!-- Based on https://github.com/vuejs/language-tools/pull/4321 -->
 
 Vue provides IntelliSense support out of the box via the [Vue - Official VS Code plugin](https://marketplace.visualstudio.com/items?itemName=Vue.volar). However, to enable it for `.md` files, you need to make some adjustments to the configuration files.
 
-
 1. Add `.md` pattern to the `include` and `vueCompilerOptions.vitePressExtensions` options in the tsconfig/jsconfig file:
 
 ::: code-group
+
 ```json [tsconfig.json]
 {
-  "include": [
-    "docs/**/*.ts",
-    "docs/**/*.vue",
-    "docs/**/*.md",
-  ],
+  "include": ["docs/**/*.ts", "docs/**/*.vue", "docs/**/*.md"],
   "vueCompilerOptions": {
-    "vitePressExtensions": [".md"],
-  },
+    "vitePressExtensions": [".md"]
+  }
 }
 ```
+
 :::
 
 2. Add `markdown` to the `vue.server.includeLanguages` option in the VS Code setting:
 
 ::: code-group
+
 ```json [.vscode/settings.json]
 {
   "vue.server.includeLanguages": ["vue", "markdown"]
 }
 ```
-:::
