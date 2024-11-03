@@ -7,6 +7,7 @@ import ElementPlus, {
   ZINDEX_INJECTION_KEY,
 } from 'element-plus'
 import { globals } from '../vitepress'
+import 'element-plus/dist/index.css'
 import './style.css'
 
 export default {
