@@ -24,9 +24,9 @@ type AliasOptions = Required<ResolveOptions>['alias']
 
 const optimizeDeps = [
   // element-plus, @vueuse/core, @element-plus/icons-vue
-  '@vueuse/core',
-  '@element-plus/icons-vue',
-  'element-plus/es',
+  // '@vueuse/core',
+  // '@element-plus/icons-vue',
+  // 'element-plus/es',
 ]
 
 
