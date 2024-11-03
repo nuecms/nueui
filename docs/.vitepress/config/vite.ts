@@ -42,10 +42,10 @@ export const getViteConfig = ({ mode }: { mode: string }): ViteConfig => {
   return {
     css: {
       preprocessorOptions: {
-        scss: { api: 'modern-compiler' },
-        // scss: {
-        //   silenceDeprecations: ['legacy-js-api'],
-        // },
+        // scss: { api: 'modern-compiler' },
+        scss: {
+          silenceDeprecations: ['legacy-js-api'],
+        },
       },
     },
     server: {
